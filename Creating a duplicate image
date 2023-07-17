@@ -1,0 +1,7 @@
+#Creating a Duplicate Image using Python
+import cv2
+img = cv2.imread('12345.jfif')
+cv2.imshow('OUTPUT',img)
+cv2.imwrite('nithin.png',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
