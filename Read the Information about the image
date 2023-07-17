@@ -1,0 +1,9 @@
+#Read the Information about the image
+import cv2
+img = cv2.imread('12345.jfij')
+print(img.shape)
+
+#EXPECTED OUTPUT(168,300,3)
+#168 is the Height of the image in pixels
+#300 is the Width of the image in pixels
+#3 is the depth/channel value-3 by default (3 primary colors)
