@@ -1,0 +1,12 @@
+#MY CANNY(EDGE DETECTION TECHNIQUE) SKECTH
+import cv2
+cap = cv2.VideoCapture(0)
+While True:
+  ret,frame = cap.read()
+  canny = cv2.Canny(frame,20,150)
+  cv2.imshow('MY CANNY SKETCH', canny)
+  if cv2.waitKey(1) == ord('q'):
+    break
+
+cap.release()
+cv2.destroyAllWindows()
